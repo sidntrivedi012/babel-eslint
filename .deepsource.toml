@@ -1,8 +1,18 @@
 version = 1
 
+exclude_patterns = [
+    "lib/**",
+    "css/**",
+    "public/**",
+    "img/**"
+]
+
 [[analyzers]]
 name = "javascript"
 enabled = true
 
   [analyzers.meta]
-  runtime_env = ["node"]
+  runtime_env = [
+    "node",
+    "browser"
+  ]
